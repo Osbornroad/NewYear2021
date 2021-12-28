@@ -124,10 +124,10 @@
 
             $(document).keypress(function (event) {
                 var code = event.keyCode;
-                if (event.keyCode === 122) {
+                if (event.keyCode === 122) { // 122 code - "z" key, "en" keyboard, low register
                     document.getElementById('fault_sound').play();
                 }
-                if (event.keyCode === 102) {
+                if (event.keyCode === 102) { // 102 code - "f" key, "en" keyboard, low register
                     document.getElementById('intro_sound').play();
                     $('#introModal').modal('show');
                 }

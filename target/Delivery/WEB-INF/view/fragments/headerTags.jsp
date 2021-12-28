@@ -34,6 +34,7 @@
     <audio id="coins" src="${pageContext.request.contextPath}/resources/sounds/coins.mp3"></audio>
     <audio id="win" src="${pageContext.request.contextPath}/resources/sounds/cash.mp3"></audio>
 
+
 <%--    <link rel="shortcut icon" href="#" />--%>
 <%--    <link rel="icon" href="data:,">--%>
     <link rel="shortcut icon" href="${pageContext.request.contextPath}/resources/images/favicon.ico" type="image/x-icon">

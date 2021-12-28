@@ -16,7 +16,7 @@ import java.util.*;
 
 @Controller
 @RequestMapping(value = {"/"})
-public class MainPageController {
+public class Game100Controller {
 
     @Autowired
     TeamService teamService;
@@ -24,11 +24,19 @@ public class MainPageController {
     @Autowired
     StageService stageService;
 
-
-
     @GetMapping()
     public String showMainPage() {
         return "main";
+    }
+
+    @GetMapping("/game100")
+    public String showGame100() {
+        return "game100";
+    }
+
+    @GetMapping("/soundRow")
+    public String showSoundRow() {
+        return"soundRow";
     }
 
     @GetMapping("/getTeam")

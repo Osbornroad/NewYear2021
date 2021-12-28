@@ -1,16 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <beans xmlns="http://www.springframework.org/schema/beans"
        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-       xmlns:context="http://www.springframework.org/schema/context"
-       xmlns:p="http://www.springframework.org/schema/p"
-       xmlns:jpa="http://www.springframework.org/schema/data/jpa"
-       xmlns:jdbc="http://www.springframework.org/schema/jdbc"
        xmlns:tx="http://www.springframework.org/schema/tx"
        xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd
-    http://www.springframework.org/schema/context https://www.springframework.org/schema/context/spring-context.xsd
     http://www.springframework.org/schema/tx http://www.springframework.org/schema/tx/spring-tx.xsd
-    http://www.springframework.org/schema/data/jpa http://www.springframework.org/schema/data/jpa/spring-jpa.xsd
-    http://www.springframework.org/schema/jdbc http://www.springframework.org/schema/jdbc/spring-jdbc.xsd
 ">
 
 <!--    <context:annotation-config/>-->
@@ -18,7 +11,7 @@
 
     <tx:annotation-driven />
 
-    <context:component-scan base-package="com.gmail.osbornroad.repository">
+  <!--  <context:component-scan base-package="com.gmail.osbornroad.repository">
         <context:include-filter type="annotation" expression="org.springframework.stereotype.Repository"/>
     </context:component-scan>
 
@@ -34,7 +27,7 @@
                 system-properties-mode="OVERRIDE"/>
     </beans>
 
-    <!--Firebird-->
+    &lt;!&ndash;Firebird&ndash;&gt;
     <beans>
 
         <bean id="fireBirdDataSource"
@@ -50,7 +43,7 @@
         </bean>
     </beans>
 
-    <!--Postgres-->
+    &lt;!&ndash;Postgres&ndash;&gt;
     <beans>
 
         <bean id="postgresDataSource"
@@ -88,6 +81,6 @@
               class="org.springframework.jdbc.core.JdbcTemplate">
             <constructor-arg ref="postgresDataSource"/>
         </bean>
-    </beans>
+    </beans>-->
 
 </beans>
