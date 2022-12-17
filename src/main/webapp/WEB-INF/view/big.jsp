@@ -147,7 +147,7 @@
         });
 
         function reset() {
-            document.getElementById("timer-display").innerHTML = "0:20";
+            document.getElementById("timer-display").innerHTML = "0:30";
 
             $(".btn").each(function () {
                 let id = $(this).attr("id").split("-");
@@ -169,10 +169,10 @@
         // let isTimerRunning = false;
 
         function timer() {
-            document.getElementById('timer_sound').play();
+            document.getElementById('timer30').play();
             $('#timer-button').attr("disabled", true);
             $('#timer-reset').attr("disabled", true);
-            let timeRemain = 20;
+            let timeRemain = 30;
             countdown();
             function countdown() {
                 let displaySec = timeRemain < 10 ? "0" + timeRemain : timeRemain;
@@ -182,7 +182,7 @@
                     setTimeout(countdown, 1000);
                     }
                 }
-                setTimeout(setTimerEnabled, 20000)
+                setTimeout(setTimerEnabled, timeRemain * 1000)
                 function setTimerEnabled() {
                     $('#timer-button').attr("disabled", false);
                     $('#timer-reset').attr("disabled", false);
@@ -276,7 +276,7 @@
                 <button class="btn btn-outline-danger" id="timer-button">Таймер</button>
             </div>
             <div class="col-1 text-center">
-                <h3 id="timer-display">0:20</h3>
+                <h3 id="timer-display">0:30</h3>
             </div>
             <div class="col-1 text-center pl-0">
                 <button class="btn btn-outline-success" id="timer-reset">Сброс</button>

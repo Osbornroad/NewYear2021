@@ -30,6 +30,7 @@
     <audio id="fault_sound" src="${pageContext.request.contextPath}/resources/sounds/Mistake.mp3"></audio>
     <audio id="SimpleGame_sound" src="${pageContext.request.contextPath}/resources/sounds/SimpleGame.mp3"></audio>
     <audio id="timer_sound" src="${pageContext.request.contextPath}/resources/sounds/timer.mp3"></audio>
+    <audio id="timer30" src="${pageContext.request.contextPath}/resources/sounds/timer30.mp3"></audio>
     <audio id="score_enroll" src="${pageContext.request.contextPath}/resources/sounds/score_enroll.mp3"></audio>
     <audio id="coins" src="${pageContext.request.contextPath}/resources/sounds/coins.mp3"></audio>
     <audio id="win" src="${pageContext.request.contextPath}/resources/sounds/cash.mp3"></audio>

@@ -329,7 +329,7 @@
 
         <div class="container">
 <%--            <button type="button" class="btn btn-outline-danger" onclick="goToBigGame()">Big game</button>--%>
-            <div class="row mt-4 mb-4" onclick="showNextStepModal()">
+            <div class="row mt-4 mb-3" onclick="showNextStepModal()">
                 <div class="col pt-4 pb-4 text-center border" id="simpleGameIndicator">
                     <h5>Простая игра</h5>
                 </div>
@@ -346,7 +346,7 @@
                     <h5>Большая игра</h5>
                 </div>
             </div>
-            <div class="row mb-5 " onclick="showModalTeamNames()">
+            <div class="row mb-3 " onclick="showModalTeamNames()">
                 <div class="col-1 pt-2 pb-2 text-center left-team">
                     <h3 class="" id="leftTeamScore"></h3>
                 </div>
@@ -365,7 +365,7 @@
             </div>
 
 <%--            Stage--%>
-            <div class="row mt-5 text-center">
+            <div class="row mt-3 text-center">
                 <div class="col-1 text-left pl-0">
                     <button type="button" id="left-team-score-write" class="btn btn-outline-dark left-team">
                         <svg width="2em" height="2em" viewBox="0 0 16 16" class="bi bi-shift-fill" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
@@ -385,7 +385,7 @@
                 </div>
             </div>
 
-            <div class="row mt-5">
+            <div class="row mt-2">
                 <div class="col text-left pl-0">
                     <button type="button" id="buttonLeftAlert_1" class="btn btn-outline-danger btn-lg fault" data-toggle="button" aria-pressed="false">X</button>
                 </div>
@@ -398,7 +398,7 @@
                     <button type="button" id="buttonRightAlert_1" class="btn btn-outline-danger btn-lg fault" data-toggle="button" aria-pressed="false">X</button>
                 </div>
             </div>
-            <div class="row mt-4">
+            <div class="row mt-2">
                 <div class="col text-left pl-0">
                     <button type="button" id="buttonLeftAlert_2" class="btn btn-outline-danger btn-lg fault" data-toggle="button" aria-pressed="false">X</button>
                 </div>
@@ -411,7 +411,7 @@
                     <button type="button" id="buttonRightAlert_2" class="btn btn-outline-danger btn-lg fault" data-toggle="button" aria-pressed="false">X</button>
                 </div>
             </div>
-            <div class="row mt-4">
+            <div class="row mt-2">
                 <div class="col text-left pl-0">
                     <button type="button" id="buttonLeftAlert_3" class="btn btn-outline-danger btn-lg fault" data-toggle="button" aria-pressed="false">X</button>
                 </div>
@@ -424,7 +424,7 @@
                     <button type="button" id="buttonRightAlert_3" class="btn btn-outline-danger btn-lg fault" data-toggle="button" aria-pressed="false">X</button>
                 </div>
             </div>
-            <div class="row mt-4">
+            <div class="row mt-2">
                 <div class="col text-left">
                 </div>
                 <div class="col-6 text-center">
@@ -435,7 +435,7 @@
                 <div class="col text-right">
                 </div>
             </div>
-            <div class="row mt-4">
+            <div class="row mt-2">
                 <div class="col text-left">
                 </div>
                 <div class="col-6 text-center">
@@ -446,7 +446,7 @@
                 <div class="col text-right">
                 </div>
             </div>
-            <div class="row mt-4">
+            <div class="row mt-2">
                 <div class="col text-left">
                 </div>
                 <div class="col-6 text-center">
